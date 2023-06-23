@@ -1,0 +1,41 @@
+@mixin title {
+    font-size: 16px;
+    line-height: 20px;
+    color: $primaryColor;
+}
+
+@mixin heading-lv2 {
+    margin-top: 6px;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    color: $headingColor;
+}
+
+@mixin desc {
+    margin-top: 10px;
+    color: $descColor;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    line-height: 25px;
+}
+
+// Services
+@mixin image {
+    width: 100%;
+    height: 254px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+@mixin sloganBg {
+    width: 100%;
+    height: 529px;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(9, 17, 86, 0.6),
+            rgba(9, 17, 86, 0.6)
+        ),
+        url(/assets/img/slogan-bg.jpg);
+    background-size: cover;
+}
