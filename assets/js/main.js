@@ -25,31 +25,14 @@ const video = $(".video");
 const play = $(".video-container");
 const playButton = $(".playBtn");
 
-// play.addEventListener("click", function () {
-//     if (video.paused) {
-//         video.play();
-//         // playButton.classList.remove("playBtn");
-//         playButton.classList.add("play");
-//     } else {
-//         video.pause();
-//         // playButton.classList.add("playBtn");
-//         playButton.classList.remove("play");
-//     }
-// });
-
-// Question Button
-var iconState = "up";
-const questionIcon = $("#question__icon");
-function changeIcon() {
-    if (iconState === "up") {
-        questionIcon.classList.remove("fa-angle-up");
-        questionIcon.classList.add("fa-angle-down");
-        iconState = "down";
+play.addEventListener("click", function () {
+    if (video.paused) {
+        video.play();
+        // playButton.classList.remove("playBtn");
+        playButton.classList.add("play");
     } else {
-        iconState = "up";
-        questionIcon.classList.remove("fa-angle-down");
-        questionIcon.classList.add("fa-angle-up");
+        video.pause();
+        // playButton.classList.add("playBtn");
+        playButton.classList.remove("play");
     }
-}
-
-// questionIcon.forEach((question, index) => {});
+});

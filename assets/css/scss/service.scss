@@ -117,7 +117,7 @@
 }
 
 .question {
-    margin-top: 116px;
+    margin: 116px 0 104px 0;
 
     &__title {
         margin-bottom: 89px;
@@ -149,9 +149,10 @@
     }
     &__block {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         gap: 471px;
+        padding: 0 19px 0 35px;
     }
 
     &__sub-title {
@@ -160,10 +161,6 @@
         font-weight: 600;
         letter-spacing: 1.6px;
     }
-
-    // &__icon.question__icon--open {
-    //     display: block;
-    // }
 
     &__content {
         height: auto;

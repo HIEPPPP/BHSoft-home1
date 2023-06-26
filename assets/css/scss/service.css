@@ -119,7 +119,7 @@
 }
 
 .question {
-  margin-top: 116px;
+  margin: 116px 0 104px 0;
 }
 .question__title {
   margin-bottom: 89px;
@@ -149,9 +149,10 @@
 }
 .question__block {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 471px;
+  padding: 0 19px 0 35px;
 }
 .question__sub-title {
   color: #091156;
